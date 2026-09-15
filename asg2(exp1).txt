@@ -1,0 +1,22 @@
+import numpy as np
+import pandas as pd
+
+#Pandas DataFrame Creation
+data={
+	"Name":["Manish", "Amit", "Riya", "Sourav", "Neha", "Rahul"],
+	"Roll_Number":[10,11, 12, 13, 14, 15],
+	"Attendance":[88, 92, 76, 95, 81, 67],
+	"Marks":[72, 85, 68, 91, 77, 95]
+
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+# Filter students who scored above 80 marks
+filtered_df = df[df["Marks"] > 80]
+
+# Display the filtered records
+print("Students who scored above 80 marks:")
+print(filtered_df)

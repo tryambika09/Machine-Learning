@@ -1,0 +1,11 @@
+import numpy as np
+
+#1.Numpy Array Operations
+marks = np.array([72, 89, 65, 92, 45, 67, 90, 70, 85])
+
+print("Marks: ", marks)
+print("Mean: ", np.mean(marks))
+print("Median: ", np.median(marks))
+print("Standard Deviation: ", np.std(marks))
+print("Maximum: ", np.max(marks))
+print("Minimum: ", np.min(marks))
